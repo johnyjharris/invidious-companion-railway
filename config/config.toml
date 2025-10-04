@@ -71,5 +71,5 @@ secret_key = "54415a56a1d5dcc7" # env variable: SERVER_SECRET_KEY
 # oauth_enabled = false # env variable: YOUTUBE_SESSION_OAUTH_ENABLED
 # cookies = "" # env variable: YOUTUBE_SESSION_COOKIES
 
-use_innertube_for_captions: true
-use_innertube_for_get_video_info: true
+use_innertube_for_captions = true
+use_innertube_for_get_video_info = true

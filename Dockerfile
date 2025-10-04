@@ -2,14 +2,11 @@ FROM denoland/deno:2.1.4
 
 WORKDIR /app
 
-# Copy dependency files
-COPY deno.json deno.lock ./
+# Copy all files
+COPY . .
 
 # Cache dependencies
-RUN deno install --entrypoint deno.json
-
-# Copy source code
-COPY . .
+RUN deno install --entrypoint src/main.ts
 
 # Expose port
 EXPOSE 3000

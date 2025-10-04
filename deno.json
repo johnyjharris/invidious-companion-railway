@@ -1,0 +1,20 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --allow-read --watch src/main.ts",
+    "start": "deno run --allow-net --allow-env --allow-read src/main.ts",
+    "compile": "deno compile --allow-net --allow-env --allow-read --output=invidious-companion src/main.ts",
+    "test": "deno test --allow-net --allow-env",
+    "format": "deno fmt"
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 100,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": false,
+    "proseWrap": "preserve"
+  },
+  "imports": {
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.0"
+  }
+}

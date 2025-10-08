@@ -10,7 +10,9 @@
 #####
 
 [server]
-port = 8080 # env variable: PORT
+# Port is set by Railway via PORT environment variable
+# Uncomment and set manually only if needed for local development
+# port = 8080 # env variable: PORT
 host = "0.0.0.0" # env variable: HOST
 # # Listens to a unix socket on instead of a TCP socket
 # use_unix_socket = false # env variable: SERVER_USE_UNIX_SOCKET
